@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 768px) {
+  .app-content {
+    background-image: none !important;
+    background-color: #f5f5f5 !important;
+  }
+}

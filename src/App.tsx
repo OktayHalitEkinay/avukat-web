@@ -15,9 +15,10 @@ function App() {
         <Navbar />
 
         <Content
+          className="app-content"
           style={{
             padding: "24px",
-            backgroundImage: "url('/images/justice.jpg')", // ← BURAYA görsel yolunu ver
+            backgroundImage: "url('/images/justice.jpg')",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",

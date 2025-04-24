@@ -123,15 +123,33 @@ const Home = () => {
                 style={{
                   borderRadius: 12,
                   textAlign: "center",
-                  boxShadow: "0 4px 12px rgba(0,0,0,0.05)",
                   minHeight: 280,
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                }}
+                bodyStyle={{ padding: "2rem" }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-8px)";
+                  e.currentTarget.style.boxShadow =
+                    "0 12px 24px rgba(0,0,0,0.1)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow =
+                    "0 4px 12px rgba(0,0,0,0.05)";
                 }}
               >
-                <div style={{ marginBottom: 16 }}>{service.icon}</div>
-                <Title level={4} style={{ color: "#1f3b73" }}>
+                <div style={{ marginBottom: 16, transition: "all 0.3s ease" }}>
+                  {service.icon}
+                </div>
+                <Title
+                  level={4}
+                  style={{ color: "#1f3b73", transition: "color 0.3s ease" }}
+                >
                   {service.title}
                 </Title>
-                <Paragraph style={{ color: "#555" }}>
+                <Paragraph
+                  style={{ color: "#555", transition: "color 0.3s ease" }}
+                >
                   {service.description}
                 </Paragraph>
               </Card>
