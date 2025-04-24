@@ -27,6 +27,24 @@ const services = [
     description:
       "Çalışan ve işveren ilişkilerinde haklarınızı etkin şekilde koruyoruz.",
   },
+  {
+    icon: <FileTextOutlined style={{ fontSize: 42, color: "#1f3b73" }} />,
+    title: "Gayrimenkul Hukuku",
+    description:
+      "Tapu işlemleri, kira sözleşmeleri ve taşınmaz ihtilaflarında yanınızdayız.",
+  },
+  {
+    icon: <SolutionOutlined style={{ fontSize: 42, color: "#1f3b73" }} />,
+    title: "Miras Hukuku",
+    description:
+      "Veraset ilamı, miras paylaşımı ve vasiyet düzenlemelerinde uzman desteği sunuyoruz.",
+  },
+  {
+    icon: <SmileOutlined style={{ fontSize: 42, color: "#1f3b73" }} />,
+    title: "Ticaret Hukuku",
+    description:
+      "Şirketler hukuku, sözleşmeler ve ticari ihtilaflarda stratejik çözümler sağlıyoruz.",
+  },
 ];
 
 const Home = () => {
